@@ -14,9 +14,9 @@
   modules = import ./modules; # NixOS modules
   overlays = import ./overlays; # nixpkgs overlays
 
-  dosbox-staging = pkgs.callPackage ./pkgs/dosbox-staging { };
+  steamgrid = pkgs.callPackage ./pkgs/applications/graphics/steamgrid { };
+  dosbox-staging = pkgs.callPackage ./pkgs/misc/emulators/dosbox-staging { };
   qdl = pkgs.callPackage ./pkgs/development/mobile/qdl { };
   # some-qt5-package = pkgs.libsForQt5.callPackage ./pkgs/some-qt5-package { };
   # ...
 }
-

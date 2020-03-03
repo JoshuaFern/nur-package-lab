@@ -51,14 +51,14 @@ stdenv.mkDerivation rec {
   '';
 
   meta = with stdenv.lib; {
-    homepage = https://github.com/dreamer/dosbox-staging;
     description = "A modernized DOS emulator";
-    longDescription = ''
-    This repository attempts to modernize the DOSBox project by using current development practices and tools, fixing issues, adding features that better support today's systems,
-and sending patches upstream.
-    '';
-    platforms = platforms.unix;
-    #maintainers = with maintainers; [  ];
+    downloadPage = https://github.com/dreamer/dosbox-staging/releases;
+    homepage = https://github.com/dreamer/dosbox-staging;
     license = licenses.gpl2;
+    longDescription = ''
+    This repository attempts to modernize the DOSBox project by using current development practices and tools, fixing issues, adding features that better support today's systems, and sending patches upstream.
+    '';
+    #maintainers = with maintainers; [  ];
+    platforms = platforms.unix;
   };
 }

@@ -22,6 +22,11 @@ stdenv.mkDerivation rec {
   meta = with stdenv.lib; {
     description = "Qualcomm Download";
     homepage = "https://github.com/andersson/qdl/";
+    license = licenses.bsd3;
+    longDescription = ''
+    This tool communicates with USB devices of id 05c6:9008 to upload a flash loader and use this to flash images.
+    '';
+    #maintainers = with maintainers; [  ];
     platforms = platforms.unix;
   };
 }
