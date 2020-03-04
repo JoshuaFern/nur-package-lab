@@ -10,9 +10,9 @@
 
 {
   # The `lib`, `modules`, and `overlay` names are special
-  #lib = import ./lib { inherit pkgs; }; # functions
-  #modules = import ./modules; # NixOS modules
-  #overlays = import ./overlays; # nixpkgs overlays
+  lib = import ./lib { inherit pkgs; }; # functions
+  modules = import ./modules; # NixOS modules
+  overlays = import ./overlays; # nixpkgs overlays
 
   steamgrid = pkgs.callPackage ./pkgs/applications/graphics/steamgrid { };
   dosbox-staging = pkgs.callPackage ./pkgs/misc/emulators/dosbox-staging { };
