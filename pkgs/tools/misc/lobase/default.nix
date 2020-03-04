@@ -1,7 +1,4 @@
-{ stdenv, fetchFromGitHub
-, bison, flex
-, libedit, libevent, ssl, ncurses, zlib
-}:
+{ stdenv, fetchFromGitHub, bison, flex, libedit, libevent, ssl, ncurses, zlib }:
 
 stdenv.mkDerivation rec {
   pname = "lobase";
