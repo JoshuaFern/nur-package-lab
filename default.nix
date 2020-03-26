@@ -17,8 +17,8 @@
   dosbox-staging = pkgs.callPackage ./pkgs/misc/emulators/dosbox-staging { };
   #lobase = pkgs.callPackage ./pkgs/tools/misc/lobase { };
   qdl = pkgs.callPackage ./pkgs/development/mobile/qdl { };
-  ubase = pkgs.callPackage ./pkgs/tools/misc/ubase { };
   samrewritten = pkgs.callPackage ./pkgs/tools/misc/samrewritten { };
+  sbase = pkgs.callPackage ./pkgs/tools/misc/sbase { };
   steamgrid = pkgs.callPackage ./pkgs/applications/graphics/steamgrid { };
   ubase = pkgs.callPackage ./pkgs/tools/misc/ubase { };
 }
