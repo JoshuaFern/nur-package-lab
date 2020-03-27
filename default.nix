@@ -14,7 +14,7 @@
   modules = import ./modules; # NixOS modules
   overlays = import ./overlays; # nixpkgs overlays
 
-  citra = pkgs.callPackage ./pkgs/misc/emulators/citra { };
+  citra = pkgs.libsForQt5.callPackage ./pkgs/misc/emulators/citra { };
   dosbox-staging = pkgs.callPackage ./pkgs/misc/emulators/dosbox-staging { };
   #lobase = pkgs.callPackage ./pkgs/tools/misc/lobase { };
   qdl = pkgs.callPackage ./pkgs/development/mobile/qdl { };
