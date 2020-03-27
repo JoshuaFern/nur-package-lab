@@ -33,7 +33,7 @@ stdenv.mkDerivation rec {
     description = "Allows you to unlock and relock your Steam achievements";
     homepage    = "https://github.com/PaulCombal/SamRewritten";
     license     = licenses.gpl3;
-    maintainers = with maintainers; [ JoshuaFern ];
+    maintainers = with maintainers; [ joshuafern ];
     platforms   = platforms.linux;
   };
 }
