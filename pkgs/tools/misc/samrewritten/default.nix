@@ -2,7 +2,7 @@
 
 stdenv.mkDerivation rec {
   pname = "samrewritten";
-  version = "r133.a839930";
+  version = "r133";
 
   src = fetchFromGitHub {
     owner = "PaulCombal";
