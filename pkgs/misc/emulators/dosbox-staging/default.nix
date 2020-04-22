@@ -20,7 +20,7 @@ stdenv.mkDerivation rec {
 
   preBuild = ''
     buildFlagsArray=( "CXXFLAGS=-O3 -DNDEBUG" )
-  '';./
+  '';
 
   postInstall = ''
     mkdir -p $out/share/applications
