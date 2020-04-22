@@ -1,4 +1,4 @@
-{ stdenv, mkDerivation, lib, fetchgit, cmake, SDL2, qtbase, qtmultimedia, boost
+{ stdenv, mkDerivation, lib, fetchgit, cmake, SDL2, qtbase, qtmultimedia, boost, alsaLib
 }:
 
 mkDerivation {
@@ -14,7 +14,7 @@ mkDerivation {
 
   enableParallelBuilding = true;
   nativeBuildInputs = [ cmake ];
-  buildInputs = [ SDL2 qtbase qtmultimedia boost ];
+  buildInputs = [ SDL2 qtbase qtmultimedia boost alsaLib ];
 
   preConfigure = ''
     # Trick configure system.
